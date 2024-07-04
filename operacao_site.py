@@ -144,7 +144,7 @@ def votar_JMJ(driver):
 
     for cont in range(tamanho_lista):
         teste_lista = str(lista.options[cont].text)
-        if teste_lista == "JMJ SISTEMAS E CONSULTORIA":
+        if teste_lista == "EMPRESA ESCOLHIDA":
             lista.options[cont].click()
             driver.find_element(By.XPATH, '/html/body/div/div/div/div/div[3]/form[1]/button').click()  # envia!
             print(f"Opcao selecionada: {teste_lista}\n")
